@@ -22,10 +22,10 @@ namespace GameController
         private void Awake()
         {
             onStartGameplay.RegisterListener(StartGameplay);
-            onPause.RegisterListener(PauseGame);
-            onResume.RegisterListener(ResumeGame);
-            onGameEnd.RegisterListener(EndGame);
-            onBackToStartScreen.RegisterListener(BackToStartScreen);
+            //onPause.RegisterListener(PauseGame);
+            //onResume.RegisterListener(ResumeGame);
+            //onGameEnd.RegisterListener(EndGame);
+            //onBackToStartScreen.RegisterListener(BackToStartScreen);
             onExit.RegisterListener(ExitGame);
 
             InitializeStateMachine(new StartScreenState(startScreenCanvas, gameplayController));
